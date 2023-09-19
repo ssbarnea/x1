@@ -1,0 +1,10 @@
+---
+- name: Example
+  hosts: localhost
+  tasks:
+    - name: include extra tasks
+      ansible.builtin.include_tasks:
+        file: /dev/null
+    - name: Include other tasks
+      ansible.builtin.include_tasks:
+        file: ./examples/playbooks/tasks/varunset.yml
